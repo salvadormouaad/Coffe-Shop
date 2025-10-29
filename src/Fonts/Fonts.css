@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@font-face {
+  font-family: LonelyCoffee;
+  src: url("../../src/Fonts/LonelyCoffee.ttf");
+}
+
+@theme{
+    --font-Lonely-Coffee: LonelyCoffee;
+}
+
+@font-face {
+  font-family: Tape;
+  src: url("../../src/Fonts/Tape.ttf");
+}
+
+@theme{
+    --font-Tape: Tape;
+}
