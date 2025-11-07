@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import Logo from '../assets/preview-removebg-preview 2.png';
 import { NavLink } from 'react-router-dom';
 
+
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className='flex flex-row max-sm:justify-between lg:w-310 max-sm:w-88 max-sm:mx-0 lg:mx-70 absolute lg:mt-25 pt-3'>
+    <div className='flex flex-row  max-sm:justify-between lg:w-280 max-sm:w-88 max-sm:mx-auto lg:ml-74  md:w-150  md:justify-between  lg:justify-between absolute md:justify-round md:mx-auto md:ml-25 lg:mt-12 pt-3 z-50'>
       {/* Logo */}
-      <img src={Logo} className='lg:w-50 max-sm:w-40 max-sm:mt-5' />
+      <img src={Logo} className='lg:w-40 md:mt-12 md:w-auto max-sm:w-auto max-sm:ml-15 max-sm:h-20 max-sm:mt-7' />
 
       {/* Mobile Hamburger Button */}
       <button
@@ -21,7 +22,7 @@ export default function Navbar() {
       </button>
 
       {/* Desktop Links (unchanged) */}
-      <div className='flex max-sm:hidden flex items-center justify-center lg:w-full lg:pt-5 max-sm:gap-4 max-sm:pt-2 lg:gap-7'>
+      <div className='flex max-sm:hidden flex items-center justify-center  lg:w-180  lg:pt-5 md:gap-5 max-sm:gap-4 max-sm:pt-2 lg:gap-7'>
         <NavLink to='/' className='text-black lg:text-lg hover:text-[#C37841] hover:underline decoration-solid'>Home</NavLink>
         <NavLink to='/Menu' className='text-black lg:text-lg hover:underline hover:text-[#C37841] decoration-solid'>Menu</NavLink>
         <NavLink to='/About' className='text-black lg:text-lg hover:underline hover:text-[#C37841] decoration-solid'>About</NavLink>

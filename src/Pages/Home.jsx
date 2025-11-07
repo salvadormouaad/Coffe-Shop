@@ -10,8 +10,8 @@ import '../index.css'
 
 export default function Home() {
   return (
-    <div style={{ backgroundImage: `url(${bg})` }} className='bg-cover bg-center bg-no-repeat lg:h-500 max-sm:h-410 lg:pt-6 max-sm:pt-10 '>
-        <div className=' flex flex-col max-sm:mx-6 max-sm:mt-0 lg:mx-15 lg:my-15  lg:w-350 bg-white bg-white/40 lg:h-470 max-sm:h-395 max-sm:w-85 rounded-4xl  '>
+    <div style={{ backgroundImage: `url(${bg})` }} className='bg-cover bg-center bg-no-repeat lg:h-500 max-sm:h-430 lg:pt-6 max-sm:pt-10 md:pt-15 md:h-370 '>
+        <div className=' flex flex-col max-sm:mx-auto max-sm:mt-0 md:w-170 md:mx-auto  lg:mx-auto lg:my-15  lg:w-350 bg-white bg-white/40 lg:h-auto max-sm:h-417 md:h-350 max-sm:w-85 rounded-4xl  '>
                <Hero/>
                 <Categories/>
                 <Choose/>

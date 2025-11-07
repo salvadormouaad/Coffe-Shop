@@ -1,19 +1,15 @@
 import React from 'react'
-import bg from '../assets/L5ybLpPKIKMyjr_-XMDqpXwt4KXcq3kCXb2ijusj4zZdB8_56qWyZCzSsf06s0cL-NzEUu4Rm5KYqVuBWy087GqdlxO3u2WfO4Py-hXhkqANKcyF-EeR5-ENSmMfm2vD0Tvq_KP8mgFFj8g8j7au7o0RvZ8rYMJ2sajiGOYhaXg3TOJjtq48K17W7xZR_NJ5UbWsrSj7uTuBvR5HEy9_A2ET 1.png'
-import hero from '../assets/hero2.png'
+import bg from '../assets/bg.png'
+import Hero from '../Components/HeroSection2'
+import Coffemenu from '../Components/Coffemenu'
 export default function Menu() {
   return (
-    <div style={{ backgroundImage: `url(${bg})` }} className='bg-cover bg-center bg-no-repeat lg:h-500 lg:pt-6 '>
-            <div className=' flex flex-col  w-250 bg-white backdrop-blur-sm  lg:mx-70 bg-white/30 lg:h-480  rounded-4xl  '>
-                   <div className='flex flex-row '>
-                        <img src={hero} alt="" className='opacity-90 rounded-4xl' /> 
-                        <p className='absolute justify-center lg:mx-70 lg:my-60 text-4xl/15 text-white lg:text-center'>Check out Our new Cafee Menu:</p>
-                   </div>
-                   <div>
-                        <h2 className='text-center lg:mt-20 text-3xl text-[#2D1801]'>You May Like One of Our coffes:</h2>
-                   </div>
+    <div style={{ backgroundImage: `url(${bg})` }} className='bg-cover bg-center bg-no-repeat max-sm:h-auto md:pt-10 md:h-auto max-sm:pt-8 max-sm:pb-8  lg:h-auto md:pb-10 lg:pb-10 lg:pt-17 '>
+          <div className=' flex flex-col max-sm:mx-auto max-sm:mt-0 md:w-170 md:mx-auto  lg:mx-auto max-sm:w-50   lg:w-350 bg-white bg-white/40 lg:h-auto max-sm:h-auto  md:h-auto  max-sm:w-85 rounded-4xl  '>
+              <Hero/> 
+              <Coffemenu/> 
                    
-            </div>
-            </div>
+          </div>
+     </div>
   )
 }
